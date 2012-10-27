@@ -87,4 +87,4 @@ Some snippets to use in your favorite `.tmTheme` file.
 
 # Credits
 
-This package was forked from, and is based on [the LESS syntax package from @danro](https://github.com/danro/refined-theme/blob/master/Color%20Schemes/Danro.tmTheme)
+This package was forked from, and is based on [the LESS syntax package from @danro](https://github.com/danro/LESS-sublime)
