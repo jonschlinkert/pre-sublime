@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pre-sublime : Pre (language) syntax highlighting for Sublime Text 2" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pre-sublime</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jonschlinkert/pre-sublime">View on GitHub</a>
+
+          <h1 id="project_title">Pre-sublime</h1>
+          <h2 id="project_tagline">Pre (language) syntax highlighting for Sublime Text 2</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jonschlinkert/pre-sublime/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jonschlinkert/pre-sublime/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Pre (language) syntax package for Sublime Text 2</h1>
+
+<p>Provides syntax highlighting for <code>.pre</code> files + support for comment-toggle commands.</p>
+
+<h2>Installing</h2>
+
+<p><strong>With the Package Control plugin:</strong> The easiest way to install this package is through Package Control, which can be found at this site: <a href="http://wbond.net/sublime_packages/package_control">http://wbond.net/sublime_packages/package_control</a></p>
+
+<p>Once you install Package Control, restart ST2 and bring up the Command Palette (Command+Shift+p on OS X, Control+Shift+p on Linux/Windows). Select "Package Control: Install Package", wait while Package Control fetches the latest package list, then select <code>pre</code> when the list appears.</p>
+
+<p><strong>Without Git:</strong> Download the latest source zip from <a href="https://github.com/jonschlinkert/pre-sublime/zipball/master">github</a> and extract the files to your Sublime Text "Packages" directory, into a new directory named <code>pre</code>.</p>
+
+<p><strong>With Git:</strong> Clone the repository in your Sublime Text "Packages" directory:</p>
+
+<pre><code>git clone git://github.com/jonschlinkert/pre-sublime.git pre
+</code></pre>
+
+<p>The "Packages" directory is located at:</p>
+
+<ul>
+<li>OS X:
+<code>~/Library/Application Support/Sublime Text 2/Packages/</code>
+</li>
+<li>Linux:
+<code>~/.Sublime Text 2/Packages/</code>
+</li>
+<li>Windows:
+<code>%APPDATA%/Sublime Text 2/Packages/</code>
+</li>
+</ul><h2>Color Scheme</h2>
+
+<p>Some snippets to use in your favorite <code>.tmTheme</code> file.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;dict&gt;</span>
+  <span class="nt">&lt;key&gt;</span>name<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>css.id<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>scope<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>meta.selector.css entity.other.attribute-name.id<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>settings<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>foreground<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>#E5D56D<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+  <span class="nt">&lt;key&gt;</span>name<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>css.class<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>scope<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>entity.other.attribute-name.class<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>settings<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>foreground<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>#A0C25F<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+  <span class="nt">&lt;key&gt;</span>name<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>pre.mixin<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>scope<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>entity.other.pre.mixin<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>settings<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>foreground<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>#98E124<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+  <span class="nt">&lt;key&gt;</span>name<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>css.element<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>scope<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>keyword.control.html.elements<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>settings<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>foreground<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>#DA4632<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+  <span class="nt">&lt;key&gt;</span>name<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>css.string<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>scope<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;string&gt;</span>meta.attribute-selector.css string<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;key&gt;</span>settings<span class="nt">&lt;/key&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>foreground<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>#FF950A<span class="nt">&lt;/string&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+</pre></div>
+
+<h1>Credits</h1>
+
+<p>This package was forked from, and is based on <a href="https://github.com/danro/refined-theme/blob/master/Color%20Schemes/Danro.tmTheme">the LESS syntax package from @danro</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pre-sublime maintained by <a href="https://github.com/jonschlinkert">jonschlinkert</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
