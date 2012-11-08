@@ -1,8 +1,8 @@
-# Pre (language) syntax package for Sublime Text 2
+#Pre (language) syntax package for Sublime Text 2
 
-Provides syntax highlighting for `.pre` files + support for comment-toggle commands.
+Provides syntax highlighting for `.pre` files and support for comment-toggle commands.
 
-## Installing
+##Installing
 
 **With the Package Control plugin:** The easiest way to install this package is through Package Control, which can be found at this site: [http://wbond.net/sublime_packages/package_control](http://wbond.net/sublime_packages/package_control)
 
